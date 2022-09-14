@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(22, 21, 21);
+            overflow-x: hidden;
+            position: relative;
+        }
+        /* 滚轮条 */
+        body::-webkit-scrollbar{
+            width: 10px;
+            border-radius: 10px;
+        }
+        body::-webkit-scrollbar-track{
+            border-radius: 10px;
+            background-color: rgb(10, 10, 10);
+        }
+        body::-webkit-scrollbar-thumb{
+            border-radius: 10px;
+            background-color: #66B9FF;
+        }
+        header{
+            margin: 80px 0 50px 50px;
+            color: white;
+        }
+        header h1{
+            font-size: 50px;
+            letter-spacing: 5px;
+            margin-bottom: 30px;
+        }
+        main{
+            margin: 50px 0 0 50px;
+            width: 1300px;
+        }
+        main ul{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        main ul li{
+            margin-right: 40px;
+            margin-bottom: 40px;
+            background-color: white;
+            transition: all .4s;
+        }
+        main ul li:hover{
+            transform: translateY(-10px);
+            color: white;
+            background-color: orange;
+        }
+        main ul li:hover a{
+            color: black;
+        }
+        main ul li p{
+            margin-top: 20px;
+            text-align: justify;
+        }
+        main ul li a{
+            text-decoration: none;
+            color: #66B9FF;
+            display: inline-block;
+        }
+        main ul li:nth-child(1){
+            width: 300px;
+            height: 250px;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        main ul li:nth-child(2){
+            width: 300px;
+            height: 250px;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        main ul li:nth-child(3){
+            width: 500px;
+            height: 250px;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        main ul li:nth-child(4){
+            width: 600px;
+            height: 250px;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        svg{
+            position: absolute;
+            top: -80px;
+            right: 0;
+            z-index: -1;
+        }
+    </style>
+    <link rel="shortcut icon" href="../img/梦之队白底.png">
+</head>
+<body>
+    <svg class="topography-shape js-shape" width="1200px" height="580px" viewBox="0 0 1200 580" version="1.1"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path
+        d="M734.567 34.372c-28.692 61.724-23.266 100.422 16.275 116.094 59.313 23.508 200.347 32.911 259.299 83.906 58.95 50.994 238.697 11.572 269.438-75.95C1310.32 70.9 1365.669-64 1073.808-64c-194.576 0-307.654 32.79-339.24 98.372h-.001z"
+        fill="#FFFA72" fill-rule="nonzero"></path>
+    <path
+        d="M734.567 34.372c-28.692 61.724-23.266 100.422 16.275 116.094 59.313 23.508 200.347 32.911 259.299 83.906 58.95 50.994 238.697 11.572 269.438-75.95C1310.32 70.9 1365.669-64 1073.808-64c-194.576 0-307.654 32.79-339.24 98.372h-.001z"
+        fill="#FFFA72" fill-rule="nonzero" transform="translate(-1200, 40) scale(2.2, 2.2) skewX(20) "
+        style="position: relative; z-index: 4; fill: rgb(154, 173, 206);"></path>
+    <path
+        d="M734.567 34.372c-28.692 61.724-23.266 100.422 16.275 116.094 59.313 23.508 200.347 32.911 259.299 83.906 58.95 50.994 238.697 11.572 269.438-75.95C1310.32 70.9 1365.669-64 1073.808-64c-194.576 0-307.654 32.79-339.24 98.372h-.001z"
+        fill="#FFFA72" fill-rule="nonzero" transform="translate(-1050, 35) scale(2.05, 2.05) skewX(17.5) "
+        style="position: relative; z-index: 5; fill: rgb(139, 155, 193);"></path>
+    <path
+        d="M734.567 34.372c-28.692 61.724-23.266 100.422 16.275 116.094 59.313 23.508 200.347 32.911 259.299 83.906 58.95 50.994 238.697 11.572 269.438-75.95C1310.32 70.9 1365.669-64 1073.808-64c-194.576 0-307.654 32.79-339.24 98.372h-.001z"
+        fill="#FFFA72" fill-rule="nonzero" transform="translate(-900, 30) scale(1.9, 1.9) skewX(15) "
+        style="position: relative; z-index: 6; fill: rgb(125, 138, 181);"></path>
+    <path
+        d="M734.567 34.372c-28.692 61.724-23.266 100.422 16.275 116.094 59.313 23.508 200.347 32.911 259.299 83.906 58.95 50.994 238.697 11.572 269.438-75.95C1310.32 70.9 1365.669-64 1073.808-64c-194.576 0-307.654 32.79-339.24 98.372h-.001z"
+        fill="#FFFA72" fill-rule="nonzero" transform="translate(-750, 25) scale(1.75, 1.75) skewX(12.5) "
+        style="position: relative; z-index: 7; fill: rgb(110, 121, 169);"></path>
+    <path
+        d="M734.567 34.372c-28.692 61.724-23.266 100.422 16.275 116.094 59.313 23.508 200.347 32.911 259.299 83.906 58.95 50.994 238.697 11.572 269.438-75.95C1310.32 70.9 1365.669-64 1073.808-64c-194.576 0-307.654 32.79-339.24 98.372h-.001z"
+        fill="#FFFA72" fill-rule="nonzero" transform="translate(-600, 20) scale(1.6, 1.6) skewX(10) "
+        style="position: relative; z-index: 8; fill: rgb(95, 103, 156);"></path>
+    <path
+        d="M734.567 34.372c-28.692 61.724-23.266 100.422 16.275 116.094 59.313 23.508 200.347 32.911 259.299 83.906 58.95 50.994 238.697 11.572 269.438-75.95C1310.32 70.9 1365.669-64 1073.808-64c-194.576 0-307.654 32.79-339.24 98.372h-.001z"
+        fill="#FFFA72" fill-rule="nonzero" transform="translate(-450, 15) scale(1.45, 1.45) skewX(7.5) "
+        style="position: relative; z-index: 9; fill: rgb(80, 86, 144);"></path>
+    <path
+        d="M734.567 34.372c-28.692 61.724-23.266 100.422 16.275 116.094 59.313 23.508 200.347 32.911 259.299 83.906 58.95 50.994 238.697 11.572 269.438-75.95C1310.32 70.9 1365.669-64 1073.808-64c-194.576 0-307.654 32.79-339.24 98.372h-.001z"
+        fill="#FFFA72" fill-rule="nonzero" transform="translate(-300, 10) scale(1.3, 1.3) skewX(5) "
+        style="position: relative; z-index: 10; fill: rgb(65, 69, 132);"></path>
+    <path
+        d="M734.567 34.372c-28.692 61.724-23.266 100.422 16.275 116.094 59.313 23.508 200.347 32.911 259.299 83.906 58.95 50.994 238.697 11.572 269.438-75.95C1310.32 70.9 1365.669-64 1073.808-64c-194.576 0-307.654 32.79-339.24 98.372h-.001z"
+        fill="#FFFA72" fill-rule="nonzero" transform="translate(-150, 5) scale(1.15, 1.15) skewX(2.5) "
+        style="position: relative; z-index: 11; fill: rgb(50, 51, 119);"></path>
+    </svg>
+
+    <header>
+        <h1>关于我们</h1>
+        <p>梦之队是由四人团队合力打造的网站，目的是为了学习前端并宣传红色文化。</p>
+    </header>
+    <main>
+        <ul>
+            <li>
+                <h3>团队成员</h3>
+                <p>熊克明：负责网站所有的开发，页面的布局、页面的优化、技术栈的更新和红色文化内容的查找，以及《跨越时空的回信》观后感。</p>
+                <p>梁旭韬：美化网页，图片的查找，vr纪念馆链接，意见提议和反馈</p>
+                <p>郭锋，杨千新：《跨越时空的回信》观后感，江西数字展馆线上学习观后感</p>
+            </li>
+            <li>
+                <h3>网站介绍</h3>
+                <p>该网站有四个主题，跨越时空的回信，工农武装，红色读本，耀邦陵园。主题一是为了学习《跨越时空的回信》用传承的信仰，致敬先烈。主题二是为了学习江西数字展馆，发扬红色文化。主题三是为了回顾红色历史，学习红色文化。主题四是红色实地走读去的耀邦陵园，为了纪念胡耀邦同志。四个主题响应“奋进新征途，建功新时代”主旋律，切实激发大学生向第二个百年奋斗目标前进。</p>
+            </li>
+            <li>
+                <h3>插件使用</h3>
+                <p>该网站用到了两个插件，<a href="https://dixonandmoe.com/rellax" target="_blank">rellax</a> 和 <a href="https://marcbruederlin.github.io/particles.js/?utm_source=cdnjs&utm_medium=cdnjs_link&utm_campaign=cdnjs_library" target="_blank">particles.js</a>，前者可以快速开发滚轮响应视差效果，后者可以添加一个粒子特性背景。Rellax 是一个黄油般光滑、超轻量级的 javascript 视差库。插件上的使用是非常方便的，只需要通过设置属性data-rellax-speed就可以完成视差效果。particles.js是一个用于粒子背景的轻量级、无依赖和响应式 javascript 插件。该插件在使用起来也是极其方便的，只需要在一个元素中添加id="particles-js"就可以实现一个粒子特性背景。同时该插件也有非常多的属性可以设置，"color"属性可以设置粒子的颜色，"line_linked"可以设置粒子是否链接，"shape"可以设置粒子的形状，比如圆形，三角形，正方形等等。</p>
+            </li>
+            <li>
+                <h3>学习过程</h3>
+                <p>为了完成该网站，前前后后学习了2个月，技术栈从html到css再到javascript，全部都是自学后完成的。在网站的开发中，由于是第一次开发网站，所以遇到过许多大大小小的问题，大到页面的布局，小到z-index等层级问题。在开发过程中，也学习了许多其他网站的优秀作品，同时别的作品也用到许多别的技术栈，比如css的扩展语言scss和html的模板语法pug等等，为此也在不断的学习来看懂代码。页面的布局和美化也是开发过程中的一大难点，因为互联网中并没有多少可以借鉴的个人制作的优秀红色网站，所以只能在外网学习优秀作品的布局来制作自己的网站。好在最后是完成了该网站的开发，但这些是远远不够的，在未来的时间里，我会进一步优化自己的网站，添加更多的内容和功能，并作为个人博客上线。</p>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>

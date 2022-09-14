@@ -1,0 +1,87 @@
+.bookSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    color: white;
+}
+.bookSection span{
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.bookSection ul{
+    list-style: none;
+}
+.bookSection ul li{
+    height: 280px;
+    width: 800px;
+    background-color: white;
+    margin-bottom: 60px;
+}
+.bookSection ul li:nth-child(even){
+    position: relative;
+    left: 150px;
+    background: rgb(4,21,29);
+    background: linear-gradient(223deg, rgba(4,21,29,1) 0%, rgba(1,118,179,1) 11%, rgba(1,130,198,1) 22%, rgba(0,164,255,1) 57%, rgb(67, 195, 202) 87%);
+}
+.bookSection ul li:nth-child(even) header{
+    flex-direction: row-reverse;
+}
+.bookSection ul li:nth-child(even) header .bookIntroduce div{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+.bookSection ul li:nth-child(odd){
+    position: relative;
+    right: 150px;
+    background: rgb(4,21,29);
+    background: linear-gradient(137deg, rgba(4,21,29,1) 0%, rgba(36,30,30,1) 20%, rgba(3,119,126,1) 43%, rgba(244,101,149,1) 69%, rgba(250,7,7,1) 100%);
+}
+
+/* 图片区域 */
+header{
+    display: flex;
+}
+header a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.bookPicture img{
+    width: 200px;
+    height: 250px;
+    transform: translateY(-40px);
+    margin: 20px;
+    background-size: cover;
+    transition: all 0.5s;
+}
+.bookPicture img:hover{
+    transform: scale(1.1);
+}
+
+
+/* 书籍介绍 */
+.bookIntroduce{
+    margin: 20px;
+}
+.bookIntroduce aside{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.bookIntroduce aside span{
+    font-size: 15px;
+    font-weight: 500;
+}
+.bookIntroduce p{
+    text-align: justify;
+}
+/* footer */
+/* footer{
+    width: 200px;
+    height: 40px;
+    margin-left: 20px;
+    transform: translateY(-15px);
+    border-top: 1px solid white;
+    
+} */

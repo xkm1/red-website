@@ -1,0 +1,75 @@
+/* 新中国成立简史 */
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#particles-js{
+    width: 100vw;
+    height: 92vh;
+}
+.chinaHistory{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.history{
+    display: flex;
+    font-size: 60px;
+    letter-spacing: 10px;
+}
+article{
+    display: flex;
+    transition: all 1s;
+    background: none;
+}
+.history:hover #article1{
+    color: rgb(242, 15, 15);
+    transform: translateX(-20px);
+    text-shadow:   
+    1px 1px 2px rgb(248, 4, 4),
+    0 0 1em rgb(248, 4, 4),
+    0 0 0.2em rgb(248, 4, 4);
+}
+.history:hover #article2{
+    color: rgb(224, 197, 19);
+    transform: translateX(20px);
+    /* text-shadow 文本阴影 */
+    text-shadow:   
+    1px 1px 2px rgb(245, 213, 5),
+    0 0 1em rgb(245, 213, 5),
+    0 0 0.2em rgb(245, 213, 5);
+}
+
+/* 打字效果 */
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+.typeWord{
+    margin-top: 10px;
+    width: 36ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    animation: typing 3.5s steps(25),
+    blink .5s step-start infinite alternate;
+    color: white;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50%{
+        /* border-color是一个用于设置元素四个边框颜色的快捷属性 */
+        border-color: transparent;
+    }
+}

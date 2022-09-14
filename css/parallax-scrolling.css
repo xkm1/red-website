@@ -1,0 +1,28 @@
+.parallax-scrolling{
+    margin: 100px auto;
+    /* background-color: rgb(255, 242, 226); */
+    background-color: rgb(28, 27, 27);
+}
+.parallax-scrolling section{
+    width: 100vw;
+    height: 90vh;
+}
+.parallax-scrolling section article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: wheat;
+}
+.parallax-scrolling section article div{
+    width: 1200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px dotted rgb(56, 56, 56);
+}
+.parallax-scrolling section article p{
+    padding: 50px 200px;
+    letter-spacing: 4px;
+    text-indent: 2em;
+    text-align: justify;
+}

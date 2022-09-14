@@ -1,0 +1,166 @@
+/* 耀邦陵园 缅怀先烈 */
+.ybly_title{
+    width: 1100px;
+    height: 40px;
+    margin: 60px auto 20px;
+    color: whitesmoke;   
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+}
+.ybly_title span{
+    margin: 10px;
+}
+
+/* ybly雕像 */
+.ybly{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 1100px;
+    margin: 20px auto;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+/* top导航栏 */
+#topNavigation{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 2px solid rgb(87, 87, 87);
+}
+#topNavigation ul{  
+    display: flex;
+    list-style: none;
+    transform: translateY(2px);
+}
+#topNavigation ul li{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 42px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(174, 170, 170);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    /* transition: all .5s; */
+}
+#topNavigation ul li:hover{
+    /* js中的点击事件会和hover冲突，要加!important提升优先级 */
+    color: white !important; 
+}
+
+/* 人物介绍 底部 */
+#bottomIntroduction{
+    position: relative;
+    width: 1100px;
+    /* background-color: #2ebf91; */
+}
+/* 轮播图图片 */
+.banner{
+    position: relative;
+    left: 0;
+    top: 0;
+    /* width: 875px;
+    height: 480px; */
+    width: 1100px;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    flex: 1;
+}
+.banner ul{
+    position: relative;
+    display: flex;
+    width: 400%;
+    list-style: none; 
+}
+.banner ul li img{
+    /* width: 875px;
+    height: 480px; */
+    width: 1100px;
+    height: 600px;
+}
+/* 轮播图左右箭头 */
+.leftArrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 300px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 40px;
+    background-color: #3f514b;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+.leftArrow:hover{
+    background-color: #2ebf91;
+}
+.rightArrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 300px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 40px;
+    background-color: #3f514b;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+.rightArrow:hover{
+    background-color: #2ebf91;
+}
+.rightIntroduction aside span{
+    color: white;
+}
+/* 人物介绍 */
+.introduction{
+    display: flex;
+    width: 1100px;
+    border-radius: 10px;
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(239, 237, 237);
+    color: rgb(233, 78, 22);
+    opacity: 0.8;
+}
+.introduction h1{
+    margin-top: 15px;
+    font-size:large;
+}
+.introduction p{
+    margin: 15px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+/* 亲友深情 */
+#hyb_friends{
+    display: none;
+}
+
+/* 人物标语 */
+#hyb_slogan{
+    display: none;
+}
+

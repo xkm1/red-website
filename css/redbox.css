@@ -1,0 +1,130 @@
+.redBox{
+    position: relative;
+    width: 1100px;
+    height: 40px;
+    margin: 60px auto 0px;
+    line-height: 40px;
+    text-align: center;
+    color: rgb(0,0,0,.6);
+    font-size: 22px;
+    font-weight: 900;
+    overflow: auto;
+}
+.redBox span{
+    margin: 10px;
+    color: rgb(239, 244, 241);
+}
+.redBook{
+    position: relative;
+    width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow: auto;
+    background-image: linear-gradient(rgb(0,0,0,.1), rgb(0,0,0,.2));
+}
+.redBook ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.redBook ul li{
+    width: 210px;
+    height: 220px;
+    margin-top: 20px;
+    margin-left: 51px;
+    color: white;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.53);
+    box-shadow: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 50%;
+    /* transition: all 1s; */
+}
+.redBook ul li:hover{
+    /*  background-image: linear-gradient不能使用过渡效果 */
+    background-image: linear-gradient(transparent, #cb5b5b);
+}
+.redBook img{
+    width: 130px;
+    height: 130px;
+    padding: 0 40px;
+   
+}
+.redBook p{
+    padding: 5px 10px;
+}
+
+/* hidden */
+
+.redBookHidden{
+    position: absolute;
+    width: 1100px;
+    height: 500px;
+    background: #EAEAEF rgb(234, 234, 239);
+    background: linear-gradient(0deg, rgba(233,233,233,1) 0%, rgba(249,241,241,1) 80%, rgba(236,214,214,1) 100%);
+    display: none;
+    word-wrap: break-word;
+}
+.redBookHidden p{
+    font-size: 18px;
+    color: red;
+    text-align: center;
+    padding-top: 10px;
+}
+.redBookHidden div{
+    width: 900px;
+    height: 400px;
+    margin: 10px auto;
+    font-weight: 800;
+    overflow:auto;
+    border-radius: 20px;
+    background: #EAEAEF rgb(234, 234, 239);
+    box-shadow:  -5px 5px 23px #525064,
+                 5px -5px 23px #ffffff;
+}
+/* 滚轮条 */
+/* .redBookHidden div::-webkit-scrollbar{
+    width: 10px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+.redBookHidden div::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+.redBookHidden div::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #66B9FF;
+} */
+.redBookHidden span{
+    display: block;
+    margin: 20px 20px;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+/* 关闭按钮 */
+.closeBtn{
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    box-shadow:  -5px 5px 17px #9ca1a5,
+            5px -5px 17px #d8dfe5;
+    font-size: 16px;
+    font-weight: 400;  
+    transition: all .5s;
+    outline: none;  
+}
+.closeBtn:hover{
+    background: #ffffff;
+    box-shadow:  -13px 13px 26px #969696,
+            13px -13px 26px #ffffff;
+}

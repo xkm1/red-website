@@ -1,0 +1,125 @@
+.nav{
+    width: 1100px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* 图标 */
+#con{
+    width: 40px;
+    height: 40px;
+}
+
+
+/* 导航栏中间位置 */
+.navMiddle{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.navMiddle ul{
+    height: 60px;
+    display: flex;
+    list-style: none;
+    z-index: 1;
+}
+.navMiddle a{
+    padding: 0 18px;
+    line-height: 60px;
+    font-size: 20px;
+    color: rgb(72, 226, 226);
+    text-decoration: none;
+}
+.navMiddle ul li a{
+    display: block;
+    height: 60px;
+}
+.navMiddle a:hover{
+    background-color: rgb(0, 0, 0);
+}
+.navMiddle div:hover ul{
+    display: block;
+}
+
+
+/* 导航栏左边 */
+.navLeft{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* overflow: hidden;  */
+   
+    z-index: 5;
+}
+.navLeft img{ 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 5;
+    transition: all .3s;
+}
+
+/* hidden */
+.navLeftHidden{
+    position: absolute;
+    width: 160px;
+    height: 150px;
+    border-radius: 10px;
+    right: -65px;
+    top: 50px;
+    background-color: white;
+    display: none; 
+    z-index: 0;
+    background-color: rgb(43, 42, 42);
+    overflow: hidden;
+    border: 2px solid skyblue;
+    outline: none;
+}
+.navLeftHidden p{
+    color: white;
+    display: block;
+    padding: 25px 0 5px 60px;
+    border-bottom: 1px solid rgb(146, 145, 145);
+}
+.navLeftHidden ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: white;
+    margin-top: 18px;
+}
+.navLeftHidden ul li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+}
+.navLeftHidden ul li a:hover{
+    background: #7F7FD5;  
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
+}
+.navLeftHidden ul li a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navLeft:hover .navLeftHidden{
+    display: block;
+} 
+.navLeft:hover img{
+    width: 70px;
+    height: 70px;
+} 

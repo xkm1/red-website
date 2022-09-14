@@ -1,0 +1,210 @@
+/* 地图 */
+.map{
+    position: relative;
+    width: 1100px;
+    height: 600px;
+    margin: 50px auto;
+}
+.jxsMap{
+    position: absolute;
+    float: left;
+    width: 450px;
+    height: 600px;
+    z-index: 1;
+}
+.jxsMap img{
+    width: 550px;
+    height: 550px;
+    margin-left: -50px;
+    margin-top: 30px;
+}
+.region{
+    position: absolute;
+    cursor: pointer;
+}
+.region:hover .place{
+    border: 2px solid #df295f;
+}
+.region:hover .dot{
+    background-color: #df295f;
+}
+.region .dot{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    margin: -3px 0 0 -3px;
+    background-color: #2960b9;
+    border-radius: 50%;
+}
+
+.region .place{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -33px 0 0 -33px;
+    width: 66px;
+    height: 66px;
+    border: 2px solid #1CB5E0;
+    border-radius: 50%;
+    opacity: .5;
+    box-shadow: 0 0 4px #1CB5E0;
+    animation: hotDot 1.5s ease-out infinite both;
+}
+.region .place01{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -44px 0 0 -44px;
+    width: 88px;
+    height: 88px;
+    border: 2px solid #1CB5E0;
+    animation-delay: .4s;
+}
+
+/* 定位区域 */
+.region-jj{
+    top: 72px;
+    left: 213px;
+}
+.region-nc{
+    top: 155px;
+    left: 240px;
+}
+.region-yc{
+    top: 215px;
+    left: 140px;
+}
+@keyframes hotDot{
+    0%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* rightMap */
+.rightMap{
+    position: absolute;
+    float: left;
+    width: 600px;
+    height: 550px;
+    margin-left: 15px;
+    margin-top: 30px;
+    border: 2px solid rgb(101, 136, 150);
+    z-index: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 10px;
+    overflow: auto;
+}
+.rightMap img{
+    float: left;
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0 20px 20px 0;
+}
+.rightMap p{
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 10px;
+    color: white;
+}
+.rightMap span{
+    color: white;
+    letter-spacing: 2px;
+    text-align: justify;
+    padding: 0 20px;
+}
+/* 滚轮条样式 */
+.rightMap::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+    display: none;
+}
+/* 纪念馆 */
+.memoryLibrary {
+    background: #485563;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 3px;
+    width: 150px;
+    height: 30px;
+    margin: 10px auto;
+    border: none;
+    position: relative;
+    display: block;
+}
+.memoryLibrary a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+.memoryLibrary:before,
+.memoryLibrary:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+}
+.memoryLibrary:before {
+    height: 0%;
+    width: 2px;
+}
+.memoryLibrary:after {
+    width: 0%;
+    height: 2px;
+  }
+.memoryLibrary:hover{
+    background: transparent;
+    box-shadow: none;
+}
+.memoryLibrary:hover:before {
+    height: 100%;
+  }
+.memoryLibrary:hover:after {
+    width: 100%;
+}
+.memoryLibrary a:hover{
+    color: rgba(2,126,251,1);
+}
+.memoryLibrary a:before,
+.memoryLibrary a:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+}
+.memoryLibrary a:before {
+    width: 2px;
+    height: 0%;
+}
+.memoryLibrary a:after {
+    width: 0%;
+    height: 2px;
+}
+.memoryLibrary :any-link:hover:before {
+    height: 100%;
+}
+.memoryLibrary a:hover:after {
+    width: 100%;
+}
+
+  
