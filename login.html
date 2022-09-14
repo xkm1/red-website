@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="shortcut icon" href="img/梦之队白底.png">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(#dc2424, #4a569d);
+        }
+        #particles-js {
+            position:absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .container{
+            width: 700px;
+            height: 450px;
+            transition: 1s;
+            transform-style: preserve-3d;
+            /* transform: rotateX(-20deg) rotateY(30deg); */
+        }
+        header{
+            width: 700px;
+            height: 450px;
+            display: flex;
+            justify-content: space-between;
+            transform: translateZ(225px);         
+        }
+        .register_user{
+            position: absolute;
+            width: 700px;
+            height: 450px;
+            top: 0px;
+            left: 0px;
+            display: flex;
+            justify-content: space-between;
+            background-color:#de2a2a;
+            border-radius: 10px;
+            transform: rotateX(90deg) translateZ(225px);
+        }
+        /* .Box:hover{
+            transform: rotateX(-90deg);
+        } */
+        .pic{
+            width: 250px;
+            height: 450px;
+            background-color: skyblue;
+            border-radius: 10px 0 0 10px;
+            overflow: hidden;
+        }
+        .register_user .pic{   
+            background-color: red;
+        }
+        .pic img{
+            width: 250px;
+            height: 450px;
+        }
+        article{
+            width: 450px;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: whitesmoke;
+            border-radius: 0 10px 10px 0;
+        }
+        h3{
+            font-size: 2em;
+            letter-spacing: 8px;
+            color: rgb(43, 41, 150);
+            margin-top: 3rem;
+        }
+        .register_user h3{
+            color: #dc2424;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        form .inp{
+            outline: none;
+            height: 3rem;
+            font-size: 1.1rem;
+            margin-top: 1.6rem;
+            padding: 1rem 0 0 0.3rem;
+            border: 0;
+            border-bottom: 1px solid rgb(144, 129, 241);
+            color: rgb(144, 129, 241);
+            background-color: rgba(0, 0, 0, 0);
+        }
+        .register_user form .inp{
+            border-bottom: 1px solid #E94057;
+            color: #E94057;
+            outline: none;
+        }
+        .inp:focus{
+            outline: none;
+            color: rgb(144, 129, 241);
+            padding: 1rem 0 0 0.3rem;
+        }
+        .login{
+            width: 80%;
+            height: 2.5rem;
+            background-image: linear-gradient(#7F7FD5, #86A8E7, #91EAE4);
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            margin: 45px 50%;
+            transform: translate(-50%);
+            cursor: pointer;
+            text-align: center;
+            outline: none;
+        }
+        .register_user .Register{
+            width: 80%;
+            height: 2.5rem;
+            font-size: 1rem;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            margin: 45px 50%;
+            transform: translate(-50%);background-image: linear-gradient(#FF416C, #F27121);
+            cursor: pointer;
+            outline: none;
+        }
+        .login:hover{
+            box-shadow: 0 0 2rem -0.3rem rgb(0 0 0 / 15%);
+        }
+        .Register:hover{
+            box-shadow: 0 0 2rem -0.3rem rgb(0 0 0 / 15%);
+        }
+        .register{
+            display: flex;
+            justify-content: space-between;
+        }
+        .register a{
+            text-decoration: none;
+            font-size: 15px;
+            color: #666;
+            cursor: pointer;
+        }
+        .register a:nth-child(even){
+            opacity: 0.5;
+        }
+        header .register a:nth-child(1):hover{
+            color: rgb(144, 129, 241);
+        }
+        .register_user .register a:nth-child(1):hover{
+            color: #E94057;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+    <header>
+        <div class="pic">
+            <img src="./img/登录背景图.jpg">
+        </div>
+        <article>
+            <h3>登录</h3>
+            <form action="" method="POST">
+                <input class="inp" type="text" placeholder="用户名" name="User" id="loginUser">
+                <input class="inp" type="password" placeholder="密码" name="Password" id="loginPassword">
+                <a><input class="login" type="button" value="Login"></a>
+                <div class="register">
+                    <a class="registerA">注册账号</a>
+                    <a class="registerA">找回密码</a>
+                </div>
+            </form>
+        </article>   
+    </header>
+    <div class="register_user">
+        <div class="pic">
+            <img src="./img/注册背景图.jpg">
+        </div>
+        <article>
+            <h3>注册</h3>
+            <form action="" method="POST">
+                <input class="inp" type="text" placeholder="用户名" name="UserRegister" id="registerUser">
+                <input class="inp" type="password" placeholder="密码" name="Password" id="registerPassword">
+                <input class="Register" type="button" value="Register">
+                <div class="register">
+                    <a class="registerA">返回</a>
+                    <a class="registerA">找回密码</a>
+                </div>
+            </form>
+        </article>   
+    </div>
+    </div>
+</body>
+<script>
+    window.addEventListener('load', function(){
+    var as = document.querySelectorAll('.registerA');
+    var container = document.querySelector('.container');
+    as[0].addEventListener('click', function(){
+        container.style.transform = 'rotateX(-90deg)';
+    }) 
+    as[2].addEventListener('click', function(){
+        container.style.transform = 'rotateX(0deg)';
+    })
+    
+
+    // 注册
+    var registerUser = document.querySelector('#registerUser');
+    var registerPassword = document.querySelector('#registerPassword');
+    var Register = document.querySelector('.Register');
+    Register.addEventListener('click', function(){
+        var userValue =  registerUser.value;
+        var passwordValue = registerPassword.value;
+        if(userValue.trim() != '' && passwordValue.trim() != ''){
+            localStorage.setItem('userImg', userValue.trim());
+            localStorage.setItem('passwordImg', passwordValue.trim());
+            alert('注册成功!');
+        }
+        else{
+            alert('账号或密码不能为空！');
+        }
+       
+    })
+
+    // 登录
+    var loginUser = document.querySelector('#loginUser');
+    var loginPassword = document.querySelector('#loginPassword');
+    var Login = document.querySelector('.login'); 
+    Login.addEventListener('click', function(){
+        var registerUserImg = localStorage.getItem('userImg');
+        var registerPasswordImg = localStorage.getItem('passwordImg');
+        if(loginUser.value == registerUserImg && loginPassword.value == registerPasswordImg){
+            alert('登录成功!');
+            this.parentNode.href = './index.html';
+        }
+        else{
+            alert('账号或密码不正确！');
+        }
+    })
+})
+</script>
+<script src="./plugins/particles/particles.min.js"></script>
+<script src="./js/app_login.js"></script>
+</html>
